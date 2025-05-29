@@ -5,6 +5,11 @@ metadata:
   labels:
     app: mywebapp
     tier: frontend
+    student-name: haile-adugna
+    student-id: ugr7191
+  annotations:
+    author: haile-adugna-ugr7191
+    submitted-by: haile-adugna-ugr7191
 spec:
   replicas: 1
   selector:
@@ -16,9 +21,10 @@ spec:
       labels:
         app: mywebapp
         tier: frontend
-    spec: # Pod spec
+    spec:
       containers:
       - name: mycontainer
         image: devopsjourney1/mywebapp
         ports:
         - containerPort: 80
+
